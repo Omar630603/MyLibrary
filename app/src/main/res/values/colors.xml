@@ -18,4 +18,5 @@
     <color name="btnOpen">#5AFFB1</color>
     <color name="lightBlue">#5AFFFF</color>
     <color name="btnAdd">#00B6CD</color>
+    <color name="btnLogout">#CD003A</color>
 </resources>
