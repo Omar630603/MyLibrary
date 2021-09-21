@@ -141,7 +141,6 @@
         android:id="@+id/txtProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="gdfh"
         android:textColor="@color/colorAccent"
         android:textStyle="italic"
         android:gravity="center"
