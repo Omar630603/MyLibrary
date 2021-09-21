@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="user"
+            type="org.aplas.mylibrary.viewmodels.User"
+            />
+        <variable
+            name="book"
+            type="org.aplas.mylibrary.viewmodels.Book"
+            />
+        <variable
+            name="booklist"
+            type="org.aplas.mylibrary.viewmodels.BookList"
+            />
+    </data>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/showLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#393E46">
+    android:background="@{user.color}">
     <LinearLayout
         android:id="@+id/headerShowLayout"
         android:layout_width="match_parent"
@@ -19,12 +34,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold|italic"
+            android:entries="@{booklist.list}"
             />
         <TextView
             android:id="@+id/txtBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Book:"
+            android:text="@{book.bookNumber+`Book Data`}"
             android:textStyle="bold"
             android:textSize="10pt"
             android:layout_marginTop="10dp"
@@ -33,7 +49,7 @@
             android:id="@+id/txtTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Title"
+            android:text="@{`Title:`+book.bookTitle}"
             android:textStyle="bold"
             android:textSize="10pt"
             android:layout_marginTop="10dp"
@@ -42,7 +58,7 @@
             android:id="@+id/txtType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Type:"
+            android:text="@{`Type:`+book.bookType}"
             android:textStyle="bold"
             android:textSize="10pt"
             android:layout_marginTop="10dp"
@@ -51,7 +67,7 @@
             android:id="@+id/txtYear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Year:"
+            android:text="@{`Year:`+book.bookYear}"
             android:textStyle="bold"
             android:textSize="10pt"
             android:layout_marginTop="10dp"
@@ -109,5 +125,7 @@
         android:textStyle="italic"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:textSize="6pt"/>
+        android:textSize="6pt"
+        android:text="@{user.profile}"/>
 </LinearLayout>
+</layout>

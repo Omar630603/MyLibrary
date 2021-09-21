@@ -21,7 +21,7 @@ public class User extends BaseObservable{
 
     public void setColor(int color) {
         this.color = color;
-        //notifyPropertyChanged(BR.color);
+        notifyPropertyChanged(BR.color);
     }
 
     @Bindable
@@ -29,11 +29,6 @@ public class User extends BaseObservable{
 
     public void setProfile(String name, String country, String phone) {
         profile = "My Profile - Name: "+name+" - Country: "+country+" - Phone: "+phone+"";
-        //notifyPropertyChanged(BR.profile);
+        notifyPropertyChanged(BR.profile);
     }
-/*
-    private String getColorCode(int clr) {
-        return String.format("#%06X", 0xFFFFFF & clr);
-    }
-*/
 }

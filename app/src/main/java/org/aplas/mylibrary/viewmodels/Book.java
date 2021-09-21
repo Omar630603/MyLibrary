@@ -45,7 +45,7 @@ public class Book extends BaseObservable{
         this.bookTitle = title;
         this.bookType = type;
         this.bookYear = year;
-        //notifyPropertyChanged(BR.book);
+        notifyPropertyChanged(BR.book);
     }
 
     private String ordinal(int i) {

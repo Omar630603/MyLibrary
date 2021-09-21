@@ -32,7 +32,7 @@ public class BookList extends BaseObservable{
     public void setBookList(ArrayList<String> booklist) {
         this.list = booklist;
         this.size = booklist.size();
-        //notifyPropertyChanged(BR.list);
-        //notifyPropertyChanged(BR.size);
+        notifyPropertyChanged(BR.list);
+        notifyPropertyChanged(BR.size);
     }
 }
