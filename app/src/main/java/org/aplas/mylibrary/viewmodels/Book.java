@@ -40,7 +40,6 @@ public class Book extends BaseObservable{
     }
 
     public void setBook(int number, String title, String type, String year) {
-        //Color.par
         this.bookNumber = ordinal(number);
         this.bookTitle = title;
         this.bookType = type;
