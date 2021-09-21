@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:background="#EEEEEE"
             android:layout_marginTop="10dp"
-            android:text="@array/book_types"
+            android:entries="@array/book_types"
             />
     </LinearLayout>
 
