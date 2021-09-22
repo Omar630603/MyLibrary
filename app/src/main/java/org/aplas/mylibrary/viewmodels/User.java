@@ -31,4 +31,9 @@ public class User extends BaseObservable{
         profile = "My Profile - Name: "+name+" - Country: "+country+" - Phone: "+phone+"";
         notifyPropertyChanged(BR.profile);
     }
+/*
+    private String getColorCode(int clr) {
+        return String.format("#%06X", 0xFFFFFF & clr);
+    }
+*/
 }

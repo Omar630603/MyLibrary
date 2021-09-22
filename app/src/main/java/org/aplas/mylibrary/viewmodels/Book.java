@@ -12,7 +12,7 @@ public class Book extends BaseObservable{
     private String bookYear;
 
     public Book() {
-        setBook(0, "", "", "");
+        setBook(0, " ", "", "");
     }
 
     public Book(int number, String title, String type, String year){
@@ -40,6 +40,7 @@ public class Book extends BaseObservable{
     }
 
     public void setBook(int number, String title, String type, String year) {
+
         this.bookNumber = ordinal(number);
         this.bookTitle = title;
         this.bookType = type;

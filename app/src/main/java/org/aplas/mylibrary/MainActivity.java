@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import org.aplas.mylibrary.models.UserData;
 import androidx.appcompat.app.AppCompatActivity;
+import org.aplas.mylibrary.models.UserData;
 import yuku.ambilwarna.AmbilWarnaDialog;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,11 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnPickColor = findViewById(R.id.btnPickBgColor);
         Button btnSaveUser = findViewById(R.id.btnSaveUser);
-
         layout = findViewById(R.id.mainLayout);
-        layout.setBackgroundColor(bgColor);
-        bgColor = getResources().getColor(R.color.bgMain);
 
+        bgColor = getResources().getColor(R.color.bgMain);
+        layout.setBackgroundColor(bgColor);
 
         btnPickColor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openColorPicker() {
-
         AmbilWarnaDialog colorPicker = new AmbilWarnaDialog(this, bgColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
             @Override
             public void onCancel(AmbilWarnaDialog dialog) {
